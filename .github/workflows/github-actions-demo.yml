@@ -23,5 +23,5 @@ Compilable:
   build:
    runs-on: ubuntu-latest
     steps:
-    - name: compilable
-      run:  npm run build
+      - name: compilable
+      - run:  npm run build
