@@ -11,7 +11,7 @@
 
 <script setup>
 import { ref } from 'vue'
-import WeatherFooter from '@/components/WeatherFooter.vue'
+import WeatherFooterFoireux from '@/components/WeatherFooter.vue'
 import WeatherContent from '@/components/WeatherContent.vue'
 import WeatherHeader from '@/components/WeatherHeader.vue'
 
