@@ -19,9 +19,14 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
-Compilable:
-  build:
-   runs-on: ubuntu-latest
+  Compilable:
+    runs-on: ubuntu-latest
     steps:
+      - name: Check out repository code
+        uses: actions/checkout@v3
+      - name: Install Node
+        uses: actions/setup-node@v3
+      - name: npm ci
+        run:  npm ci
       - name: compilable
-      - run:  npm run build
+        run:  npm run build 
